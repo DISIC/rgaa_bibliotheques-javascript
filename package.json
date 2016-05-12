@@ -1,8 +1,8 @@
 {
-  "name": "rgaa_bibliotheques_javascript",
+  "name": "rgaa_bibliotheques-javascript",
   "version": "1.0.0",
   "description": "Accessibility support for popular JavaScript frameworks.",
-  "repository": "DISIC/rgaa_bibliotheques_javascript",
+  "repository": "DISIC/rgaa_bibliotheques-javascript",
   "license": "ISC",
   "contributors": [
     "Simon Bonaventure <simon@vtech.fr>",
