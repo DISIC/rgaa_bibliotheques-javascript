@@ -1,0 +1,29 @@
+{
+  "name": "rgaa_bibliotheques_javascript",
+  "version": "1.0.0",
+  "description": "Accessibility support for popular JavaScript frameworks.",
+  "repository": "DISIC/rgaa_bibliotheques_javascript",
+  "license": "ISC",
+  "contributors": [
+    "Simon Bonaventure <simon@vtech.fr>",
+    "Jérôme Botineau <jerome.botineau@vtech.fr>",
+    "Félix Girault <felix@vtech.fr>"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "angular": "^1.2.0",
+    "angular-ui-bootstrap": "^0.12.0",
+    "react": "^0.13.0",
+    "react-bootstrap": "^0.19.0",
+    "rgaa_angular-bootstrap": "^1.0.0",
+    "rgaa_jquery-ui": "^1.0.0",
+    "rgaa_react-bootstrap": "^1.0.0"
+  },
+  "devDependencies": {
+    "jsx-loader": "^0.13.2",
+    "webpack": "^1.12.15"
+  }
+}
