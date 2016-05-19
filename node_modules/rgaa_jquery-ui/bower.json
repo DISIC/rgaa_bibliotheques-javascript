@@ -1,8 +1,0 @@
-{
-  "name": "rgaa_jquery-ui",
-  "description": "Accessible jQueryUI components.",
-  "devDependencies": {
-    "jquery": "^1.11.0",
-    "jquery-ui": "^1.11.0"
-  }
-}
