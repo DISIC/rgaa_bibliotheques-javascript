@@ -44,31 +44,19 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
-	__webpack_require__(10);
-=======
 	__webpack_require__(11);
->>>>>>> master
 
 
 
 	/**
 	 *
 	 */
-<<<<<<< HEAD
-	__webpack_require__(11);
-	__webpack_require__(13);
-=======
 	__webpack_require__(12);
->>>>>>> master
 	__webpack_require__(14);
 	__webpack_require__(15);
 	__webpack_require__(16);
 	__webpack_require__(17);
-<<<<<<< HEAD
-=======
 	__webpack_require__(18);
->>>>>>> master
 
 
 /***/ },
@@ -81,12 +69,8 @@
 /* 7 */,
 /* 8 */,
 /* 9 */,
-<<<<<<< HEAD
-/* 10 */
-=======
 /* 10 */,
 /* 11 */
->>>>>>> master
 /***/ function(module, exports) {
 
 	/******/ (function(modules) { // webpackBootstrap
@@ -334,17 +318,10 @@
 	/******/ ]);
 
 /***/ },
-<<<<<<< HEAD
-/* 11 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $ = __webpack_require__(12);
-=======
 /* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $ = __webpack_require__(13);
->>>>>>> master
 
 
 
@@ -354,27 +331,16 @@
 
 
 /***/ },
-<<<<<<< HEAD
-/* 12 */
-=======
 /* 13 */
->>>>>>> master
 /***/ function(module, exports) {
 
 	module.exports = jQuery;
 
 /***/ },
-<<<<<<< HEAD
-/* 13 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $ = __webpack_require__(12);
-=======
 /* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $ = __webpack_require__(13);
->>>>>>> master
 
 
 
@@ -408,17 +374,10 @@
 
 
 /***/ },
-<<<<<<< HEAD
-/* 14 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $ = __webpack_require__(12);
-=======
 /* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $ = __webpack_require__(13);
->>>>>>> master
 
 
 
@@ -438,17 +397,10 @@
 
 
 /***/ },
-<<<<<<< HEAD
-/* 15 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $ = __webpack_require__(12);
-=======
 /* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $ = __webpack_require__(13);
->>>>>>> master
 
 
 
@@ -475,17 +427,10 @@
 
 
 /***/ },
-<<<<<<< HEAD
-/* 16 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $ = __webpack_require__(12);
-=======
 /* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $ = __webpack_require__(13);
->>>>>>> master
 
 
 
@@ -525,17 +470,10 @@
 
 
 /***/ },
-<<<<<<< HEAD
-/* 17 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $ = __webpack_require__(12);
-=======
 /* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $ = __webpack_require__(13);
->>>>>>> master
 
 
 
