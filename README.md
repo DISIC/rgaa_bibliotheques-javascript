@@ -14,4 +14,4 @@ Voici les bibliothèques étudiées :
 
 Nous savons les limites de l'exercice, les bibliothèques étant amenées à évoluer. Ce projet vise à initier une démarche pour remonter les problèmes auprès des différents éditeurs de bibliothèques et les aider à prendre en compte l'accessibilité dans les développements de base.
 
-La partie tutoriel est consultable en ligne à l'adresse suivante https://disic.github.io/rgaa_bibliotheques_javascript/tutoriels/index.html
+La partie tutoriel est consultable en ligne à l'adresse suivante https://disic.github.io/rgaa_bibliotheques-javascript/tutoriels/index.html
