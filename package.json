@@ -26,6 +26,7 @@
     "rgaa_reactjs": "^2.0.0"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^4.0.1",
     "jsx-loader": "^0.13.2",
     "react-autocomplete": "^1.4.0",
     "webpack": "^1.12.15"
