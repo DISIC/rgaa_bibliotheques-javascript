@@ -1,6 +1,6 @@
 var rgaaAngularBootstrap = require('rgaa_angular-bootstrap');
 
-console.log(rgaaAngularBootstrap);
+
 
 /**
  *

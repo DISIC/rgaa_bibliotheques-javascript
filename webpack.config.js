@@ -9,9 +9,9 @@ var fullPath = path.resolve.bind(null, __dirname);
  */
 module.exports = {
 	entry: {
-		'angular-bootstrap': fullPath('./src/angular-bootstrap/index.js'),
-		'jquery-ui': fullPath('./src/jquery-ui/index.js'),
-		'react-bootstrap': fullPath('./src/react-bootstrap/index.js')
+		'rgaa-angular-bootstrap': fullPath('./src/angular-bootstrap/index.js'),
+		'rgaa-jquery-ui': fullPath('./src/jquery-ui/index.js'),
+		'rgaa-react-bootstrap': fullPath('./src/react-bootstrap/index.js')
 	},
 	output: {
 		path: 'dist',
@@ -32,10 +32,15 @@ module.exports = {
 	},
 	plugins: [
 		new CopyWebpackPlugin([
+			{ from: 'node_modules/jquery/dist/jquery.js', to: 'jquery.js' },
+			{ from: 'node_modules/jquery-ui-dist/jquery-ui.min.js', to: 'jquery-ui.js' },
+			{ from: 'node_modules/angular/angular.js', to: 'angular.js' },
+			{ from: 'node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js', to: 'angular-ui-bootstrap.js' },
+			{ from: 'node_modules/highlightjs/highlight.pack.js', to: 'highlight.js' },
 			{ from: 'node_modules/bootstrap/dist/css/bootstrap.css', to: 'bootstrap.css' },
 			{ from: 'node_modules/bootstrap/dist/css/bootstrap-theme.css', to: 'bootstrap-theme.css' },
 			{ from: 'node_modules/highlightjs/styles/github.css', to: 'github.css' },
-			{ from: 'node_modules/jquery-ui/themes/base/all.css', to: 'jquery-ui.css' }
+			{ from: 'node_modules/jquery-ui/themes/base', to: 'jquery-ui' }
 		])
 	]
 };
