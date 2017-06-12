@@ -11,8 +11,8 @@ module.exports = React.createClass({
 
 	render: function() {
 		return (
-			<RgaaReactBootstrap.Accordion>
-				<ReactBootstrap.Panel header="Titre 1" eventKey="1">
+			<RgaaReactBootstrap.Accordion defaultActiveKeys={['1']}>
+				<ReactBootstrap.Panel header="Titre 1" id="panel2" eventKey="1">
 					<p>
 						Anim pariatur cliche reprehenderit, enim eiusmod high life
 						accusamus terry richardson ad squid. 3 wolf moon officia
@@ -28,7 +28,7 @@ module.exports = React.createClass({
 					</p>
 				</ReactBootstrap.Panel>
 
-				<ReactBootstrap.Panel header="Titre 2" eventKey="2">
+				<ReactBootstrap.Panel header="Titre 2" id="panel2" eventKey="2">
 					<p>
 						Anim pariatur cliche reprehenderit, enim eiusmod high life
 						accusamus terry richardson ad squid. 3 wolf moon officia
@@ -45,7 +45,7 @@ module.exports = React.createClass({
 					<p><a href="#">Un lien</a>.</p>
 				</ReactBootstrap.Panel>
 
-				<ReactBootstrap.Panel header="Titre 3" eventKey="3">
+				<ReactBootstrap.Panel header="Titre 3" id="panel2" eventKey="3">
 					<p>
 						Anim pariatur cliche reprehenderit, enim eiusmod high life
 						accusamus terry richardson ad squid. 3 wolf moon officia

@@ -1,29 +1,33 @@
 {
   "name": "rgaa_bibliotheques-javascript",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Accessibility support for popular JavaScript frameworks.",
   "repository": "DISIC/rgaa_bibliotheques-javascript",
-  "license": "ISC",
-  "contributors": [
-    "Simon Bonaventure <simon@vtech.fr>",
-    "Jérôme Botineau <jerome.botineau@vtech.fr>",
-    "Félix Girault <felix@vtech.fr>"
-  ],
+  "license": "CC-BY 2.0",
+  "author": "Etat Plateforme <rgaa.sgmap@modernisation.gouv.fr>",
   "main": "index.js",
   "scripts": {
     "build": "webpack"
   },
   "dependencies": {
-    "angular": "^1.2.0",
-    "angular-ui-bootstrap": "^0.12.0",
-    "react": "^0.13.0",
-    "react-bootstrap": "^0.19.0",
-    "rgaa_angular-bootstrap": "^1.0.0",
-    "rgaa_jquery-ui": "^1.0.0",
-    "rgaa_react-bootstrap": "^1.0.0"
+    "angular": "^1.5.8",
+    "angular-ui-bootstrap": "^2.2.0",
+    "bootstrap": "^3.3.7",
+    "highlightjs": "^9.8.0",
+    "jquery": "^3.1.1",
+    "jquery-ui": "^1.12.1",
+    "jquery-ui-dist": "^1.12.1",
+    "react": "^15.4.1",
+    "react-bootstrap": "^0.30.7",
+    "react-dom": "^15.4.1",
+    "rgaa_angular-bootstrap": "^2.0.0",
+    "rgaa_jquery-ui": "^2.0.0",
+    "rgaa_react-bootstrap": "^2.0.0",
+    "rgaa_reactjs": "^2.0.0"
   },
   "devDependencies": {
     "jsx-loader": "^0.13.2",
+    "react-autocomplete": "^1.4.0",
     "webpack": "^1.12.15"
   }
 }

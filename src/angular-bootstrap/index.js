@@ -14,8 +14,6 @@ app.controller('ProgressDemoCtrl', [
 	require('./ProgressDemoCtrl')
 ]);
 
-app.controller('ModalDemoCtrl', require('./ModalDemoCtrl'));
-app.controller('ModalInstanceCtrl', require('./ModalInstanceCtrl'));
 app.controller('TabsDemoCtrl', require('./TabsDemoCtrl'));
 app.controller('TooltipDemoCtrl', function(){});
 app.controller('AccordionDemoCtrl', require('./AccordionDemoCtrl'));

@@ -15,7 +15,7 @@ module.exports = React.createClass({
 				<RgaaReactBootstrap.TooltipOverlayTrigger
 					placement="left"
 					overlay={
-						<ReactBootstrap.Tooltip>
+						<ReactBootstrap.Tooltip id="tooltip1">
 							Informations complémentaires
 						</ReactBootstrap.Tooltip>
 					}
@@ -28,7 +28,7 @@ module.exports = React.createClass({
 				<RgaaReactBootstrap.TooltipOverlayTrigger
 					placement="top"
 					overlay={
-						<ReactBootstrap.Tooltip>
+						<ReactBootstrap.Tooltip id="tooltip2">
 							Informations complémentaires
 						</ReactBootstrap.Tooltip>
 					}
@@ -41,7 +41,7 @@ module.exports = React.createClass({
 				<RgaaReactBootstrap.TooltipOverlayTrigger
 					placement="bottom"
 					overlay={
-						<ReactBootstrap.Tooltip>
+						<ReactBootstrap.Tooltip id="tooltip3">
 							Informations complémentaires
 						</ReactBootstrap.Tooltip>
 					}
@@ -54,7 +54,7 @@ module.exports = React.createClass({
 				<RgaaReactBootstrap.TooltipOverlayTrigger
 					placement="right"
 					overlay={
-						<ReactBootstrap.Tooltip>
+						<ReactBootstrap.Tooltip id="tooltip4">
 							Informations complémentaires
 						</ReactBootstrap.Tooltip>
 					}

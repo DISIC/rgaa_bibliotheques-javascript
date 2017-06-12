@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Tutoriel "composants d’interface ReactJS" - SGMAP</title>
+		<link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+		<link href="../node_modules/highlightjs/styles/github.css" rel="stylesheet"/>
+		<link href="../styles.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<header class="navbar navbar-inverse navbar-static-top" role="banner">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="index.html" class="navbar-brand">Tutoriel "composants d’interface JavaScript"</a>
+				</div>
+				<nav class="collapse navbar-collapse bs-navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="jquery-ui.html">Jquery-ui</a>
+						</li>
+						<li>
+							<a href="angular-ui.html">Angular-ui</a>
+						</li>
+						<li>
+							<a href="react-bootstrap.html">React Bootstrap</a>
+						</li>
+						<li class="active">
+							<a href="reactjs.html" title="ReactJS - page active">ReactJS</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main role="main" class="container">
+			<section>
+				<header>
+					<h1 lang="en">ReactJS</h1>
+					<p lang="en" class="lead">React 15.4.1 - React Autocomplete 1.4.0 - React Modal 1.6.2 - React Tabs 0.8.2</p>
+				</header>
+
+				<ul class="list-inline">
+					<li lang="en"><a href="#tuto-autocomplete">Autocomplete</a></li>
+				</ul>
+
+				<article id="tuto-autocomplete">
+					<header>
+						<h2 lang="en">Autocomplete</h2>
+					</header>
+
+					<div>
+						<h3>Corrections</h3>
+
+						<p>Plusieurs améliorations sont nécessaires pour rendre ce composant accessible&nbsp;:</p>
+
+						<ul>
+							<li>Le composant doit posséder la propriété <code lang="en">aria-haspopup="true"</code> ;</li>
+							<li>Le champ de saisie doit posséder un <code lang="en">role="textbox"</code> ;</li>
+							<li>
+								Pour chaque champ qui propose une liste de choix, le champ doit posséder
+								la propriété <code lang="en">aria-autocomplete="list"</code> ;
+							</li>
+							<li>
+								Chaque champ qui possède la propriété <code lang="en">aria-autocomplete="list"</code>,
+								doit respecter ces conditions :
+
+								<ul>
+									<li>Le champ doit posséder la propriété <code lang="en">aria-activedescendant="ID_option_selectionnée"</code> ;</li>
+									<li>Le champ doit posséder la propriété <code lang="en">aria-owns="ID_liste"</code>.</li>
+								</ul>
+							</li>
+							<li>
+								Depuis un champ dont la liste de choix est déployée, l'utilisation des [TOUCHES DE DIRECTION]
+								doit respecter ces conditions :
+
+								<ul>
+									<li>L'utilisation de <kbd title="haut">↑</kbd> et <kbd title="bas">↓</kbd> doit déplacer le <span lang="en">focus</span> sur l'élément suivant dans la liste.</li>
+									<li>Depuis le dernier élément de la liste, l'utilisation de <kbd title="bas">↓</kbd> doit donner le <span lang="en">focus</span> au champ de saisie.</li>
+									<li>Depuis le premier élément de la liste, l'utilisation de <kbd title="haut">↑</kbd> doit donner le <span lang="en">focus</span> au champ de saisie.</li>
+									<li>Le champ doit être mis à jour avec le choix qui possède le focus.</li>
+								</ul>
+							</li>
+						</ul>
+
+						<p>
+							Malheureusement, les corrections à apporter sont trop complexes pour être appliquées
+							au composant original sans le réécrire. Il serait possible d'ajouter les attributs
+							manquants en héritant du composant (mais pas par composition, ce qui est en soi un
+							problème selon <a href="https://facebook.github.io/react/docs/composition-vs-inheritance.html">
+							les bonnes pratiques React sur le sujet</a>). Néanmoins, la gestion correcte du focus
+							demande une réécriture en profondeur du code du composant.
+						</p>
+
+						<h3>Solution alternative</h3>
+
+						<div class="bs-callout bs-callout-warning">
+							<p>
+								L'alternative à un composant d'autocomplétion peut-être très variable en fonction
+								de la nature de l'autocomplétion. Selon les cas il peut s'agir&nbsp;:
+							</p>
+
+							<ul>
+								<li>
+									D'une liste déroulante (balise <abbr title="Hypertext Markup Language" lang="en">HTML</abbr>
+									<code lang="en">select</code>) la recherche par autocomplétion est alors
+									remplacée par la recherche par caractères dans une liste déroulante ;
+								</li>
+								<li>
+									D'une page regroupant tous les termes impactés par l'autocomplétion et traités
+									sous la forme de lien de requête serveur. Là aussi le système d'autocomplétion
+									est alors remplacé par la recherche plein texte dans la liste des liens ;
+								</li>
+								<li>
+									Utiliser un élément <code lang="en">datalist</code> <abbr title="Hypertext Markup Language 5" lang="en">HTML 5</abbr>,
+									qui permet de monter une autocomplétion "accessible", mais malheureusement
+									son support est encore très limité par les navigateurs
+									(<a href="http://caniuse.com/#search=datalist">voir le support de la balise <code lang="en">datalist</code></a>).
+								</li>
+							</ul>
+						</div>
+					</div>
+				</article>
+
+				<article>
+					<header>
+						<h2>Avis du développeur</h2>
+					</header>
+
+					<blockquote>
+						<p>
+							Les composants <span lang="en">React</span> sont très "fermés", ils ne
+							permettent leur configuration que par des propriétés. Il peut
+							devenir compliqué d'enrichir un composant sans le réécrire si son auteur
+							ne prévoit pas de moyen de configurer certains comportements, ou trop peu
+							d'événements auquels souscrire lors de changements d'état.
+						</p>
+						<p>
+							Il reste possible de modifier tout type de composant, mais cela peut s'avérer
+							complexe, et relativement verbeux par rapport à un code pensé pour
+							<span lang="en">React</span> depuis le début. Avant de choisir un composant,
+							il est donc judicieux d'évaluer les options de configuration possibles
+							(modification des attributs DOM, des classes CSS), pour faciliter son
+							intégration dans un contexte particulier.
+						</p>
+						<p>
+							<a href="https://github.com/DISIC/rgaa_jquery-ui">
+								Consulter le dépôt des corrections pour <span lang="en">ReactJS</span>
+							</a>
+						</p>
+					</blockquote>
+				</article>
+			</section>
+		</main>
+
+		<footer role="contentinfo" class="navbar navbar-default navbar-static-bottom small">
+			<div class="container">
+				<h2>
+					Droits de reproduction
+					<small>Ce document est placé sous <a href="http://www.etalab.gouv.fr/licence-ouverte-open-licence">licence ouverte 1.0 ou ultérieure</a></small>
+				</h2>
+				<div class="row">
+					<div class="col-md-1">
+						<img src="../modernisation-logo.jpg" alt="Secrétariat général pour la modernisation de l'action publique" class="navbar-left">
+					</div>
+					<div class="col-md-5">
+						<p class="clear">Vous êtes libres de&nbsp;:</p>
+						<ul>
+							<li>Reproduire, copier, publier et transmettre ces informations ;</li>
+							<li>Diffuser et redistribuer ces informations ;</li>
+							<li>Adapter, modifier, extraire et transformer ces informations, notamment pour créer des informations dérivées ;</li>
+							<li>Exploiter ces informations à titre commercial, par exemple en la combinant avec d'autres informations, ou en l'incluant dans votre propre produit ou application.</li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<p>Ces libertés s'appliquent sous réserve de mentionner la paternité de l'information d'origine : sa source et la date de sa dernière mise à jour. Le réutilisateur peut notamment s'acquitter de cette condition en indiquant un ou des liens hypertextes (URL) renvoyant vers le présent site et assurant une mention effective de sa paternité.</p><p>Cette mention de paternité ne doit ni conférer un caractère officiel à la réutilisation de ces informations, ni suggérer une quelconque reconnaissance ou caution par le producteur de l'information, ou par toute autre entité publique, du réutilisateur ou de sa réutilisation.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="../node_modules/jquery/dist/jquery.js"></script>
+		<script src="../node_modules/highlightjs/highlight.pack.js"></script>
+
+		<script>hljs.initHighlightingOnLoad();</script>
+	</body>
+</html>
