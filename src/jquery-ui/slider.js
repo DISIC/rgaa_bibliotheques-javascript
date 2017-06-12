@@ -7,7 +7,8 @@ $( "#slider" ).slider({
 	label: ['curseur simple']
 });
 
-$( "#slider2" ).slider({
+$( "#slidervertical" ).slider({
 	ariaValuetext: '$',
+	orientation: "vertical",
 	label: [$('#slider_label')]
 });

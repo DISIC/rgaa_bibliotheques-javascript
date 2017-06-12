@@ -39,8 +39,8 @@ module.exports = React.createClass({
 		return (
 			<div>
 				<RgaaReactBootstrap.ProgressBar
-					label="%(percent)s%"
 					title="Exemple de progress bar"
+					label={this.state.value + '%'}
 					target={this.props.target}
 					now={this.state.value}
 				/>

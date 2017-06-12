@@ -25,7 +25,7 @@ module.exports = {
 			{
 				test: /\.js$/,
 				loader: 'jsx-loader',
-				include: fullPath('src/react-bootstrap')
+				include: fullPath('src/react')
 			}
 		]
 	}
